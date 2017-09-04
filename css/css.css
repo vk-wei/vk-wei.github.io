@@ -19,7 +19,7 @@ header {
   background: #323091;
   color: white;
   height: 100px;
-  padding-top: 14px; }
+  padding-top: 16px; }
   header .menu-nav {
     margin: 0 auto;
     display: flex;
@@ -29,8 +29,7 @@ header {
     header .menu-nav li {
       list-style: none; }
       header .menu-nav li.menu-item {
-        font-size: 12px;
-        padding: 10px 60px; }
+        font-size: 12px; }
         header .menu-nav li.menu-item > div {
           font-size: 13px; }
       header .menu-nav li.logo > img {
