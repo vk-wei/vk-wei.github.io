@@ -10,6 +10,39 @@
 html,body{
   width: 100%;
   height: 100%;
+  font-family: PingFang Consolas;
+}
+html {
+  font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+  html {
+    font-size: 25px !important;
+  }
+}
+@media only screen and (min-width: 428px){
+  html {
+    font-size: 26.75px !important;
+  }
+}
+@media only screen and (min-width: 481px){
+  html {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 569px){
+  html {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 641px){
+  html {
+    font-size: 40px !important;
+  }
+}
+@font-face {
+  font-family: PingFang;
+  src: url(../font/PingFang.ttc);
 }
 section{
   width: 100%;
@@ -28,11 +61,23 @@ header{
     width: 60%;
     li{
       list-style: none;
+      cursor: pointer;
       &.menu-item{
         //width: 120px;
         //height: 100px;
         font-size: 12px;
         //padding: 10px 60px;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          background-image: url(../images/a_line.png);
+          width: 26px;
+          height: 54px;
+          top: -32px;
+          left: -20px;
+          background-size: 100% 100%;
+        }
         &>div{
           font-size: 13px;
         }
@@ -45,6 +90,114 @@ header{
     }
   }
 }
-section.one{
+.section{
+  position: relative;
+  .tableCell{
+    vertical-align: top;
+  }
+}
+.section.one{
   background: #323091;
+}
+.section.two{
+  background: #FEFEFE;
+}
+.section.three{
+  background: #FCCA35;
+}
+.piece{
+  position: absolute;
+  background-size: 100% 100%;
+}
+.wei{
+  position: relative;
+  margin: 0 auto;
+  width: 22.25rem;
+  height: 11.7rem;
+  bottom: -20%;
+}
+ .piece.bicycle{
+  background-image: url(../images/a_bicycle.png);
+  width: 16rem;
+   height: 12rem;
+}
+ .piece.interest{
+   background-image: url(../images/a_interest.png);
+   width: 12rem;
+   height: 6.25rem;
+   position: absolute;
+   right: 0;
+   top: -15px;
+ }
+ .piece.me{
+   background-image: url(../images/a_font.png);
+    width: 9.75rem;
+   height: 3.5rem;
+   position: absolute;
+   transform: scale(0.4);
+   left: -120px;
+   top: -80px;
+ }
+ .piece.cloud_01{
+   background-image: url(../images/a_cloud_01.png);
+   width: 6.2rem;
+   height: 1.525rem;
+   transform: scale(.5);
+   top: 5rem;
+   right: 10rem;
+
+ }
+.piece.cloud_02{
+  background-image: url(../images/a_cloud_02.png);
+  width: 4.25rem;
+  height: 1.05rem;
+  top: 5.25rem;
+  left: -1rem;
+}
+.piece.cloud_03{
+  background-image: url(../images/a_cloud_03.png);
+  width: 7.625rem;
+  height: 1.05rem;
+  right: 0;
+  top: 12rem;
+}
+//section 2
+.title{
+  margin: 0 auto;
+  width: 12rem;
+  text-align: center;
+  color: #6564A8;
+  .maintitle{
+    font-size: 1.3rem;
+  }
+  .subtitle{
+    font-size: 0.8rem;
+  }
+}
+.tablet{
+  position: relative;
+  margin: 0 auto;
+  width: 22.25rem;
+  height: 11.7rem;
+  bottom: -10%;
+}
+.piece.tablet_01{
+  background-image: url(../images/b_computer_a.png);
+  width: 14.75rem;
+  height: 16.775rem;
+}
+.piece.tablet_02{
+  background-image: url(../images/b_computer_b.png);
+  width: 17.325rem;
+  height: 19.825rem;
+}
+//section 3
+.piece.bg_01{
+  background-image: url(../images/c_from_a.png);
+}
+.piece.bg_02{
+  background-image: url(../images/c_from_b.png);
+}
+.piece.text{
+  background-image: url(../images/c_from_b.png);
 }
