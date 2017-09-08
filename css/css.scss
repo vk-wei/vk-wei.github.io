@@ -97,6 +97,10 @@ header{
     vertical-align: top;
   }
 }
+.section .container{
+  width: 100%;
+  height: 100%;
+}
 .section.one{
   background: #323091;
 }
@@ -268,4 +272,32 @@ header{
     }
   }
 
+}
+//SECTION 5
+.section .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #FEFEFE;
+  .title{
+    color: inherit;
+  }
+  .code{
+    background-image: url(../images/e_code.png);
+    background-size: 100% 100%;
+    width: 9.2rem;
+    height: 9.4rem;
+    margin: 0 auto;
+  }
+  .desc{
+    margin: 0 auto;
+    color: #FEFEFE;
+    text-align: center;
+    .desc_01{
+      font-size: .8rem;
+    }
+    .desc_02{
+      font-size: .9rem;
+    }
+  }
 }

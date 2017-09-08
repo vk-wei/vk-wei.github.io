@@ -73,6 +73,10 @@ header {
   .section .tableCell {
     vertical-align: top; }
 
+.section .container {
+  width: 100%;
+  height: 100%; }
+
 .section.one {
   background: #323091; }
 
@@ -226,5 +230,27 @@ header {
         font-size: .4rem; }
         .section.four ul li .designer .info:first-child {
           margin-top: 3rem; }
+
+.section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #FEFEFE; }
+  .section .container .title {
+    color: inherit; }
+  .section .container .code {
+    background-image: url(../images/e_code.png);
+    background-size: 100% 100%;
+    width: 9.2rem;
+    height: 9.4rem;
+    margin: 0 auto; }
+  .section .container .desc {
+    margin: 0 auto;
+    color: #FEFEFE;
+    text-align: center; }
+    .section .container .desc .desc_01 {
+      font-size: .8rem; }
+    .section .container .desc .desc_02 {
+      font-size: .9rem; }
 
 /*# sourceMappingURL=css.css.map */
