@@ -1,15 +1,14 @@
+@charset "UTF-8";
 *, *:before, *:after { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-@font-face { font-family: PingFang; src: url(../font/PingFang.ttc); }
-html, body { width: 100%; height: 100%; font-family: PingFang Consolas sans-serif; }
+@font-face { font-family: PingFang; src: url(../font/PingFang.ttf); }
+html, body { width: 100%; height: 100%; font-family: PingFang, 鍗庢枃榛戜綋, sans-serif; }
 
 html { font-size: 20px; }
 
-@media only screen and (min-width: 401px) { html { font-size: 25px !important; } }
-@media only screen and (min-width: 428px) { html { font-size: 26.75px !important; } }
-@media only screen and (min-width: 481px) { html { font-size: 30px !important; } }
-@media only screen and (min-width: 569px) { html { font-size: 35px !important; } }
-@media only screen and (min-width: 641px) { html { font-size: 40px !important; } }
+@media (min-width: 768px) and (max-width: 991px) { html { font-size: 30px; } }
+@media (min-width: 992px) and (max-width: 1199px) { html { font-size: 35px; } }
+@media (min-width: 1200px) { html { font-size: 40px !important; } }
 .section { width: 100%; height: 100%; }
 
 header { background: #323091; color: white; height: 100px; padding-top: 16px; }
@@ -35,13 +34,13 @@ header .menu-nav li.logo > img { width: 92px; }
 
 .piece { position: absolute; background-size: 100% 100%; }
 
-.wei { position: relative; margin: 0 auto; width: 22.25rem; height: 11.7rem; bottom: -20%; }
+.wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 1rem; left: 0; right: 0; }
 
-.piece.bicycle { background-image: url(../images/a_bicycle.png); width: 16rem; height: 12rem; }
+.piece.bicycle { background-image: url(../images/a_bicycle.png); width: 932px; height: 668px; width: 23.3rem; height: 16.7rem; }
 
-.piece.interest { background-image: url(../images/a_interest.png); width: 12rem; height: 6.25rem; position: absolute; right: 0; top: -15px; }
+.piece.interest { background-image: url(../images/a_interest.png); width: 476px; height: 250px; width: 11.9rem; height: 6.25rem; position: absolute; right: 0; top: 62px; }
 
-.piece.me { background-image: url(../images/a_font.png); width: 9.75rem; height: 3.5rem; position: absolute; transform: scale(0.4); left: -120px; top: -80px; }
+.piece.me { background-image: url(../images/a_font.png); width: 389px; height: 143px; width: 9.725rem; height: 3.575rem; position: absolute; left: 0px; top: -80px; }
 
 .piece.cloud_01 { background-image: url(../images/a_cloud_01.png); width: 6.2rem; height: 1.525rem; transform: scale(0.5); top: 5rem; right: 10rem; }
 
@@ -68,13 +67,18 @@ header .menu-nav li.logo > img { width: 92px; }
 .section.four .container { overflow: hidden; }
 .section.four .container ul { width: 100%; height: 100%; white-space: nowrap; transition: all 1s ease; position: absolute; left: 0; }
 .section.four .container ul li { list-style: none; display: inline-block; width: 60%; height: 100%; }
-.section.four .container ul li .designer { width: 6rem; height: 14rem; margin-right: 2rem; float: right; margin-top: 4rem; }
+.section.four .container ul li .designer { width: 7.7rem; height: 14rem; margin-right: 20rem; float: right; margin-top: 1.5rem; }
 .section.four .container ul li .designer > div { margin: 0 auto; text-align: center; color: white; }
-.section.four .container ul li .designer .avatar { width: 4rem; height: 4rem; background-size: auto 100%; }
+.section.four .container ul li .designer .avatar { background-image: url(../images/d_face.png); width: 7.7rem; height: 7.7rem; background-size: auto 100%; }
+.section.four .container ul li .designer .line { background-image: url(../images/d_line_w.png); width: 217px; height: 56px; }
 .section.four .container ul li .designer .name { font-size: .6rem; }
-.section.four .container ul li .designer .position { font-size: .5rem; }
-.section.four .container ul li .designer .info { font-size: .4rem; }
+.section.four .container ul li .designer .position { font-size: .6rem; }
+.section.four .container ul li .designer .info { font-size: .45rem; }
 .section.four .container ul li .designer .info:first-child { margin-top: 3rem; }
+.section.four .container ul li:nth-child(2) * { color: #1E235D !important; }
+.section.four .container ul li.active .designer { margin-right: 7rem !important; }
+.section.four .container .control { background-image: url(../images/d_prev.png); width: 100px; height: 141px; position: absolute; bottom: 1rem; left: 62%; transition: all .5s ease; }
+.section.four .container .control:hover { left: 61%; }
 
 .section.five .container { display: flex; flex-direction: column; justify-content: space-around; color: #FEFEFE; }
 .section.five .container .title { color: inherit; }
