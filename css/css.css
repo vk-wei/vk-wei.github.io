@@ -6,25 +6,71 @@ html, body { width: 100%; height: 100%; font-family: PingFang, 鍗庢枃榛戜�
 
 html { font-size: 20px; }
 
-@media (min-width: 768px) and (max-width: 991px) { html { font-size: 30px; } }
-@media (min-width: 992px) and (max-width: 1199px) { html { font-size: 35px; } }
-@media (min-width: 1200px) { html { font-size: 40px !important; } }
+@media (max-width: 575px) { .section.one { background: #323091; }
+  .section.one header .navbar-header { margin-right: -15px; margin-left: -15px; height: 2.5rem; display: block; border-bottom: 1px solid #6c6ba9; overflow: hidden; }
+  .section.one header .navbar-header button { width: 1.8rem; height: 1.8rem; position: relative; float: right; padding: 8px 7px; margin-top: .4rem; margin-right: 1rem; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid #f3f3f3; border-radius: 4px; cursor: pointer; }
+  .section.one header .navbar-header button .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+  .section.one header .navbar-header button .icon-bar { display: block; width: 100%; height: 2px; border-radius: 1px; background-color: #fff; margin: .17rem 0; }
+  .section.one header .navbar-header .navbar-brand { background-image: url(../images/logo.png); height: 2.5rem; width: 2.5rem; display: inline-block; background-size: auto 100%; background-repeat: no-repeat; margin-left: 1rem; margin-top: .3rem; }
+  .section.one header ul { width: 100%; display: block; height: 0; overflow: hidden; }
+  .section.one header ul.active { height: auto; }
+  .section.one header ul li { width: 100%; height: 2.5rem; font-size: 1.2rem; padding-left: 1rem; line-height: 2.5rem; background-color: #1e1c6d; z-index: 416; cursor: pointer; color: white; }
+  .section.one header ul li > div { display: inline-block; font-size: 1.3rem; }
+  .section.one header ul li.logo { display: none; }
+  .section.one .wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 1rem; left: -3rem; right: 0; transform: scale(0.6); }
+  .section.four .container { overflow: hidden; position: relative; }
+  .section.four .container ul { width: 100%; height: 100%; white-space: nowrap; transition: all 1s ease; position: absolute; left: 0; }
+  .section.four .container ul li { list-style: none; display: inline-block; width: 100%; height: 100%; }
+  .section.four .container ul li .designer { width: 7.7rem; height: 14rem; margin: 1.5rem auto 0 auto; }
+  .section.four .container ul li .designer > div { margin: 0 auto; text-align: center; color: white; }
+  .section.four .container ul li .designer .avatar { background-image: url(../images/d_face.png); width: 7.7rem; height: 7.7rem; background-size: auto 100%; }
+  .section.four .container ul li .designer .line { background-image: url(../images/d_line_w.png); width: 217px; height: 56px; }
+  .section.four .container ul li .designer .name { font-size: .6rem; }
+  .section.four .container ul li .designer .position { font-size: .6rem; }
+  .section.four .container ul li .designer .info { font-size: .45rem; }
+  .section.four .container ul li .designer .info:first-child { margin-top: 3rem; }
+  .section.four .container ul li:nth-child(2) * { color: #1E235D !important; }
+  .section.four .container .control { background-image: url(../images/d_prev.png); width: 100px; height: 141px; position: fixed; bottom: 1rem; left: 62%; transition: all .5s ease; }
+  .section.four .container .control:hover { left: 61%; } }
+@media (min-width: 576px) { .section.one header { background: transparent; color: white; height: 100px; padding-top: 16px; }
+  .section.one header .navbar-header { display: none; }
+  .section.one header .menu-nav { margin: 0 auto; display: flex; justify-content: space-around; height: 100%; width: 60%; }
+  .section.one header .menu-nav li { list-style: none; cursor: pointer; height: auto; }
+  .section.one header .menu-nav li.menu-item { font-size: 12px; position: relative; line-height: .5rem; }
+  .section.one header .menu-nav li.menu-item:before { content: ''; position: absolute; background-image: url(../images/a_line.png); width: 26px; height: 54px; top: -32px; left: -20px; background-size: 100% 100%; }
+  .section.one header .menu-nav li.menu-item > div { font-size: 13px; display: block; }
+  .section.one header .menu-nav li.logo { display: block; height: 3.6rem; }
+  .section.one header .menu-nav li.logo > img { width: 92px; }
+  .section.one .wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 6rem; left: 0; right: 0; }
+  .section.four .container { overflow: hidden; }
+  .section.four .container ul { width: 100%; height: 100%; white-space: nowrap; transition: all 1s ease; position: absolute; left: 0; }
+  .section.four .container ul li { list-style: none; display: inline-block; width: 60%; height: 100%; }
+  .section.four .container ul li .designer { width: 7.7rem; height: 14rem; margin: 1.5rem auto 0 auto; }
+  .section.four .container ul li .designer > div { margin: 0 auto; text-align: center; color: white; }
+  .section.four .container ul li .designer .avatar { background-image: url(../images/d_face.png); width: 7.7rem; height: 7.7rem; background-size: auto 100%; }
+  .section.four .container ul li .designer .line { background-image: url(../images/d_line_w.png); width: 217px; height: 56px; }
+  .section.four .container ul li .designer .name { font-size: .6rem; }
+  .section.four .container ul li .designer .position { font-size: .6rem; }
+  .section.four .container ul li .designer .info { font-size: .45rem; }
+  .section.four .container ul li .designer .info:first-child { margin-top: 3rem; }
+  .section.four .container ul li:nth-child(2) * { color: #1E235D !important; }
+  .section.four .container .control { background-image: url(../images/d_prev.png); width: 100px; height: 141px; position: absolute; bottom: 1rem; left: 62%; transition: all .5s ease; }
+  .section.four .container .control:hover { left: 61%; } }
+@media (min-width: 768px) and (max-width: 991px) { html { font-size: 30px; }
+  .section.one .wei { bottom: 1rem; left: -1rem; transform: scale(0.8); } }
+@media (min-width: 992px) and (max-width: 1199px) { html { font-size: 35px; }
+  .section.one .wei { bottom: 3rem !important; left: -2rem; transform: scale(0.9); } }
+@media (min-width: 1200px) { html { font-size: 40px !important; }
+  .section.one .wei { bottom: 1rem !important; }
+  .section.one .navbar-header { display: none !important; } }
 .section { width: 100%; height: 100%; }
-
-header { background: #323091; color: white; height: 100px; padding-top: 16px; }
-header .menu-nav { margin: 0 auto; display: flex; justify-content: space-around; height: 100%; width: 60%; }
-header .menu-nav li { list-style: none; cursor: pointer; }
-header .menu-nav li.menu-item { font-size: 12px; position: relative; }
-header .menu-nav li.menu-item:before { content: ''; position: absolute; background-image: url(../images/a_line.png); width: 26px; height: 54px; top: -32px; left: -20px; background-size: 100% 100%; }
-header .menu-nav li.menu-item > div { font-size: 13px; }
-header .menu-nav li.logo > img { width: 92px; }
 
 .section { position: relative; }
 .section .tableCell { vertical-align: top; }
 
 .section .container { width: 100%; height: 100%; }
 
-.section.one { background: #323091; }
+.section.one { background: #323091; /*  .navbar-header{ margin-right: -15px; margin-left: -15px; height: 3.5rem; display: block; button{ width: 2.6rem; height: 2.6rem; position: relative; float: right; padding: 9px 10px; margin-top: .8rem; margin-right: 1rem; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid #f3f3f3; border-radius: 4px; cursor: pointer; .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; } .icon-bar { display: block; width: 100%; height: 4px; border-radius: 1px; background-color: #fff; margin: 12px 0; } } .navbar-brand{ background-image: url(../images/logo.png); height: 3.5rem; width: 3.5rem; display: inline-block; background-size: auto 100%; background-repeat: no-repeat; margin-left: 1rem; margin-top: .8rem; } } ul{ width: 100%; display: block; height: 0; overflow: hidden; &.active{ height: auto; } li{ width: 100%; height: 3.5rem; font-size: 1.4rem; padding-left: 1rem; line-height: 3.5rem; background-color: #323091; z-index: 416; cursor: pointer; &>div{ display: inline-block; font-size: 1.6rem; } &.logo{ display: none; } } }*/ }
 
 .section.two { background: #FEFEFE; }
 
@@ -33,8 +79,6 @@ header .menu-nav li.logo > img { width: 92px; }
 .section.five { background: #E7767A; }
 
 .piece { position: absolute; background-size: 100% 100%; }
-
-.wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 1rem; left: 0; right: 0; }
 
 .piece.bicycle { background-image: url(../images/a_bicycle.png); width: 932px; height: 668px; width: 23.3rem; height: 16.7rem; }
 
@@ -66,17 +110,16 @@ header .menu-nav li.logo > img { width: 92px; }
 
 .section.four .container { overflow: hidden; }
 .section.four .container ul { width: 100%; height: 100%; white-space: nowrap; transition: all 1s ease; position: absolute; left: 0; }
-.section.four .container ul li { list-style: none; display: inline-block; width: 60%; height: 100%; }
-.section.four .container ul li .designer { width: 7.7rem; height: 14rem; margin-right: 20rem; float: right; margin-top: 1.5rem; }
+.section.four .container ul li { list-style: none; display: inline-block; height: 100%; }
+.section.four .container ul li .designer { width: 7.7rem; height: 14rem; margin-top: 1.5rem; }
 .section.four .container ul li .designer > div { margin: 0 auto; text-align: center; color: white; }
 .section.four .container ul li .designer .avatar { background-image: url(../images/d_face.png); width: 7.7rem; height: 7.7rem; background-size: auto 100%; }
-.section.four .container ul li .designer .line { background-image: url(../images/d_line_w.png); width: 217px; height: 56px; }
+.section.four .container ul li .designer .line { background-image: url(../images/d_line_w.png); width: 217px; height: 56px; max-width: 100%; }
 .section.four .container ul li .designer .name { font-size: .6rem; }
 .section.four .container ul li .designer .position { font-size: .6rem; }
 .section.four .container ul li .designer .info { font-size: .45rem; }
 .section.four .container ul li .designer .info:first-child { margin-top: 3rem; }
 .section.four .container ul li:nth-child(2) * { color: #1E235D !important; }
-.section.four .container ul li.active .designer { margin-right: 7rem !important; }
 .section.four .container .control { background-image: url(../images/d_prev.png); width: 100px; height: 141px; position: absolute; bottom: 1rem; left: 62%; transition: all .5s ease; }
 .section.four .container .control:hover { left: 61%; }
 
