@@ -119,6 +119,22 @@ html {
       transform: scale(.6);
     }
   }
+  .section.three{
+    .piece.bg_01{
+      transform: scale(.8);
+      transform-origin: left bottom;
+    }
+    .piece.bg_02{
+      transform: scale(.8);
+      transform-origin: right top;
+    }
+    .piece.text{
+      //max-width: 100%;
+      //max-height: 100%;
+      transform: scale(.8);
+      transform-origin: center center;
+    }
+  }
   .section.four{
     .container{
       overflow: hidden;
@@ -211,6 +227,7 @@ html {
         justify-content: space-around;
         height: 100%;
         width: 60% ;
+        padding-top: 1rem;
         li{
           list-style: none;
           cursor: pointer;
@@ -339,6 +356,11 @@ html {
     font-size: 30px;
   }
   .section.one{
+    header{
+      .menu-nav{
+        width: 80%;
+      }
+    }
     .wei{
       bottom: 1rem;
       left: -1rem;
@@ -353,6 +375,11 @@ html {
     font-size: 35px;
   }
   .section.one{
+    header{
+      .menu-nav{
+        width: 90%;
+      }
+    }
     .wei{
       bottom: 3rem !important;
       left: -2rem;
