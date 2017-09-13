@@ -14,8 +14,8 @@ html { font-size: 20px; }
   .section.one header .navbar-header .navbar-brand { background-image: url(../images/logo.png); height: 2.5rem; width: 2.5rem; display: inline-block; background-size: auto 100%; background-repeat: no-repeat; margin-left: 1rem; margin-top: .3rem; }
   .section.one header ul { width: 100%; display: block; height: 0; overflow: hidden; }
   .section.one header ul.active { height: auto; }
-  .section.one header ul li { width: 100%; height: 2.5rem; font-size: 1.2rem; padding-left: 1rem; line-height: 2.5rem; background-color: #1e1c6d; z-index: 416; cursor: pointer; color: white; }
-  .section.one header ul li > div { display: inline-block; font-size: 1.3rem; }
+  .section.one header ul li { width: 100%; height: 2.2rem; font-size: .8rem; padding-left: 1rem; line-height: 2.2rem; background-color: #1e1c6d; z-index: 416; cursor: pointer; color: white; }
+  .section.one header ul li > div { display: inline-block; font-size: 1.0rem; }
   .section.one header ul li.logo { display: none; }
   .section.one .wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 1rem; left: -3rem; right: 0; transform: scale(0.6); }
   .section.three .piece.bg_01 { transform: scale(0.8); transform-origin: left bottom; }
