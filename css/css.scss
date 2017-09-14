@@ -226,8 +226,8 @@ html {
         display: flex;
         justify-content: space-around;
         height: 100%;
-        width: 60% ;
-        padding-top: 1rem;
+        width: 70% ;
+        //padding-top: 1rem;
         li{
           list-style: none;
           cursor: pointer;
@@ -256,9 +256,12 @@ html {
           }
           &.logo{
             display: block;
-            height: 3.6rem;
+            width: 127px;
+            height: 160px;
+            width: 3.175rem;
+            height: 4rem;
             &>img{
-              width: 92px;
+              width: 100%;
               //height: 100% !important;
             }
           }
@@ -377,7 +380,7 @@ html {
   .section.one{
     header{
       .menu-nav{
-        width: 90%;
+        width: 60%;
       }
     }
     .wei{
@@ -400,6 +403,11 @@ html {
     .navbar-header{
       display: none !important;
     }
+    header{
+      .menu-nav{
+        width: 60%;
+      }
+    }
   }
 }
 .section{
@@ -409,6 +417,7 @@ html {
 
 .section{
   position: relative;
+  overflow: hidden;
   .tableCell{
     vertical-align: top;
   }
@@ -419,6 +428,9 @@ html {
 }
 .section.one{
   background: #323091;
+  .wei{
+    max-height: 60%;
+  }
 /*  .navbar-header{
     margin-right: -15px;
     margin-left: -15px;

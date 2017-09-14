@@ -37,13 +37,13 @@ html { font-size: 20px; }
   .section.four .container .control:hover { left: 61%; } }
 @media (min-width: 576px) { .section.one header { background: transparent; color: white; height: 100px; padding-top: 16px; }
   .section.one header .navbar-header { display: none; }
-  .section.one header .menu-nav { margin: 0 auto; display: flex; justify-content: space-around; height: 100%; width: 60%; padding-top: 1rem; }
+  .section.one header .menu-nav { margin: 0 auto; display: flex; justify-content: space-around; height: 100%; width: 70%; }
   .section.one header .menu-nav li { list-style: none; cursor: pointer; height: auto; }
   .section.one header .menu-nav li.menu-item { font-size: 12px; position: relative; line-height: .5rem; }
   .section.one header .menu-nav li.menu-item:before { content: ''; position: absolute; background-image: url(../images/a_line.png); width: 26px; height: 54px; top: -32px; left: -20px; background-size: 100% 100%; }
   .section.one header .menu-nav li.menu-item > div { font-size: 13px; display: block; }
-  .section.one header .menu-nav li.logo { display: block; height: 3.6rem; }
-  .section.one header .menu-nav li.logo > img { width: 92px; }
+  .section.one header .menu-nav li.logo { display: block; width: 127px; height: 160px; width: 3.175rem; height: 4rem; }
+  .section.one header .menu-nav li.logo > img { width: 100%; }
   .section.one .wei { position: absolute; margin: 0 auto; width: 27rem; height: 17rem; bottom: 6rem; left: 0; right: 0; }
   .section.four .container { overflow: hidden; }
   .section.four .container ul { width: 100%; height: 100%; white-space: nowrap; transition: all 1s ease; position: absolute; left: 0; }
@@ -63,19 +63,21 @@ html { font-size: 20px; }
   .section.one header .menu-nav { width: 80%; }
   .section.one .wei { bottom: 1rem; left: -1rem; transform: scale(0.8); } }
 @media (min-width: 992px) and (max-width: 1199px) { html { font-size: 35px; }
-  .section.one header .menu-nav { width: 90%; }
+  .section.one header .menu-nav { width: 60%; }
   .section.one .wei { bottom: 3rem !important; left: -2rem; transform: scale(0.9); } }
 @media (min-width: 1200px) { html { font-size: 40px !important; }
   .section.one .wei { bottom: 1rem !important; }
-  .section.one .navbar-header { display: none !important; } }
+  .section.one .navbar-header { display: none !important; }
+  .section.one header .menu-nav { width: 60%; } }
 .section { width: 100%; height: 100%; }
 
-.section { position: relative; }
+.section { position: relative; overflow: hidden; }
 .section .tableCell { vertical-align: top; }
 
 .section .container { width: 100%; height: 100%; }
 
 .section.one { background: #323091; /*  .navbar-header{ margin-right: -15px; margin-left: -15px; height: 3.5rem; display: block; button{ width: 2.6rem; height: 2.6rem; position: relative; float: right; padding: 9px 10px; margin-top: .8rem; margin-right: 1rem; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid #f3f3f3; border-radius: 4px; cursor: pointer; .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; } .icon-bar { display: block; width: 100%; height: 4px; border-radius: 1px; background-color: #fff; margin: 12px 0; } } .navbar-brand{ background-image: url(../images/logo.png); height: 3.5rem; width: 3.5rem; display: inline-block; background-size: auto 100%; background-repeat: no-repeat; margin-left: 1rem; margin-top: .8rem; } } ul{ width: 100%; display: block; height: 0; overflow: hidden; &.active{ height: auto; } li{ width: 100%; height: 3.5rem; font-size: 1.4rem; padding-left: 1rem; line-height: 3.5rem; background-color: #323091; z-index: 416; cursor: pointer; &>div{ display: inline-block; font-size: 1.6rem; } &.logo{ display: none; } } }*/ }
+.section.one .wei { max-height: 60%; }
 
 .section.two { background: #FEFEFE; }
 
